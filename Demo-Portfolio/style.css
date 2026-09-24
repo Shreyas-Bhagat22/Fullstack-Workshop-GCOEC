@@ -1,0 +1,15 @@
+header{
+    background-color: rgb(20, 20, 20);
+    color: white;
+    text-align: center;
+    line-height: 3;
+}
+nav a{
+    color: white;
+}
+body {
+    font-family: sans-serif;
+    background-color: whitesmoke;
+    color: black;
+    line-height: 1.5;
+}

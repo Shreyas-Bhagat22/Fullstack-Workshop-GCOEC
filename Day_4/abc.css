@@ -1,0 +1,14 @@
+*{
+    color: maroon;
+    background-color: aquamarine;
+}
+#hello{
+    color: navy;
+    background-color: azure;
+    text-align: center;
+}
+.btn{
+    color: azure;
+    background-color: burlywood;
+    text-align: center;
+}
