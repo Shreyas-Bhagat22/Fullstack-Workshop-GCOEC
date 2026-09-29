@@ -1,0 +1,67 @@
+* {
+    box-sizing: border-box;
+}
+
+body {
+    font-family: Arial, sans-serif;
+    margin: 0;
+    background-color: #f2f5f9;
+    color: #222;
+}
+
+header {
+    background-color: #222;
+    color: white;
+    text-align: center;
+    padding: 30px;
+}
+
+section {
+    background-color: white;
+    width: 80%;
+    max-width: 700px;
+    margin: 25px auto;
+    padding: 25px;
+    border-radius: 10px;
+    box-shadow: 0 3px 10px #ccc;
+}
+
+h2 {
+    color: #0066cc;
+}
+
+button {
+    background-color: #0066cc;
+    color: white;
+    border: none;
+    padding: 10px 18px;
+    margin: 10px 5px 10px 0;
+    border-radius: 5px;
+    cursor: pointer;
+}
+
+button:hover {
+    background-color: #004c99;
+}
+
+input {
+    padding: 10px;
+    margin: 5px;
+    border: 1px solid #aaa;
+    border-radius: 5px;
+}
+
+p {
+    line-height: 1.6;
+}
+
+#variableOutput,
+#dataTypeOutput,
+#operatorOutput,
+#conditionOutput,
+#loopOutput,
+#functionOutput {
+    background-color: #f1f1f1;
+    padding: 10px;
+    border-radius: 5px;
+}
