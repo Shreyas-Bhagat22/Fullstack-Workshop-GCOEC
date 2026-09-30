@@ -1,57 +1,219 @@
 <!DOCTYPE html>
-<html>
+<html lang="en">
 
 <head>
-    <title>Login</title>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+    <title>JavaScript Day 2</title>
+
+    <link rel="stylesheet" href="style.css">
 </head>
 
 <body>
 
-    <h1>Login Page</h1>
-
-    <p>
-        Username:
-        <input type="text" id="username">
-    </p>
-
-    <p>
-        Password:
-        <input type="password" id="password">
-    </p>
-
-    <p>
-        <button onclick="login()">Login</button>
-    </p>
-
-    <p id="result"></p>
-
-    <script>
-
-        function login() {
-
-            let username =
-                document.getElementById("username").value;
-
-            let password =
-                document.getElementById("password").value;
+    <header>
+        <h1>JavaScript - Day 2</h1>
+        <p>Objects, Classes, Methods, DOM & Events</p>
+    </header>
 
 
-            if (username == "admin" && password == "12345") {
+    
+    <section>
 
-                document.getElementById("result").innerText =
-                    "Login Successful";
+        <h2>1. Objects</h2>
 
-            }
-            else {
+        <p>
+            An object stores data in
+            key-value pairs.
+        </p>
 
-                document.getElementById("result").innerText =
-                    "Wrong Username or Password";
+        <button onclick="showObject()">
+            Show Object
+        </button>
 
-            }
+        <p id="objectOutput"></p>
 
-        }
+    </section>
 
-    </script>
+
+    <section>
+
+        <h2>2. Object Methods</h2>
+
+        <p>
+            A function inside an object
+            is called a method.
+        </p>
+
+        <button onclick="showMethod()">
+            Call Method
+        </button>
+
+        <p id="methodOutput"></p>
+
+    </section>
+
+
+   
+    <section>
+
+        <h2>3. Classes & Constructor</h2>
+
+        <button onclick="showClass()">
+            Create Student
+        </button>
+
+        <p id="classOutput"></p>
+
+    </section>
+
+
+    
+    <section>
+
+        <h2>4. Array Methods</h2>
+
+        <button onclick="showArrayMethods()">
+            Run Array Methods
+        </button>
+
+        <p id="arrayOutput"></p>
+
+    </section>
+
+
+    <section>
+
+        <h2>5. String Methods</h2>
+
+        <button onclick="showStringMethods()">
+            Run String Methods
+        </button>
+
+        <p id="stringOutput"></p>
+
+    </section>
+
+
+   
+    <section>
+
+        <h2>6. DOM Manipulation</h2>
+
+        <p id="domText">
+            This text will change.
+        </p>
+
+        <button onclick="changeText()">
+            Change Text
+        </button>
+
+        <button onclick="changeColor()">
+            Change Color
+        </button>
+
+    </section>
+
+
+    
+    <section>
+
+        <h2>7. Events</h2>
+
+        <button id="eventButton">
+            Click Me
+        </button>
+
+        <p id="eventOutput"></p>
+
+    </section>
+
+    <section>
+
+        <h2>8. Mouse Events</h2>
+
+        <div id="box">
+
+            Move Mouse Here
+
+        </div>
+
+        <p id="mouseOutput"></p>
+
+    </section>
+
+
+   
+    <section>
+
+        <h2>9. Keyboard Events</h2>
+
+        <input
+            type="text"
+            id="keyboardInput"
+            placeholder="Type something"
+        >
+
+        <p id="keyboardOutput"></p>
+
+    </section>
+
+
+
+    <section>
+
+        <h2>10. Form Event</h2>
+
+        <form id="myForm">
+
+            <input
+                type="text"
+                id="studentName"
+                placeholder="Enter your name"
+            >
+
+            <button type="submit">
+                Submit
+            </button>
+
+        </form>
+
+        <p id="formOutput"></p>
+
+    </section>
+
+
+  
+
+    <section>
+
+        <h2>11. Local Storage</h2>
+
+        <input
+            type="text"
+            id="storageInput"
+            placeholder="Enter data"
+        >
+
+        <button onclick="saveData()">
+            Save
+        </button>
+
+        <button onclick="getData()">
+            Get Data
+        </button>
+
+        <button onclick="removeData()">
+            Remove
+        </button>
+
+        <p id="storageOutput"></p>
+
+    </section>
+
+
+    <script src="script.js"></script>
 
 </body>
 
