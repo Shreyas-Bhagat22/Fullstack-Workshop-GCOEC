@@ -1,0 +1,31 @@
+{
+  "name": "taskflow-task-manager",
+  "version": "1.0.0",
+  "description": "Full-stack Task Manager Web Application built with Vanilla JS, Node.js, Express, and Supabase PostgreSQL",
+  "main": "server/server.js",
+  "scripts": {
+    "start": "node server/server.js",
+    "dev": "nodemon server/server.js",
+    "test": "node test_migration.js && node test_supabase_mock.js"
+  },
+  "keywords": [
+    "taskflow",
+    "task-manager",
+    "nodejs",
+    "express",
+    "supabase",
+    "postgresql",
+    "vanilla-javascript"
+  ],
+  "author": "",
+  "license": "ISC",
+  "dependencies": {
+    "@supabase/supabase-js": "^2.117.2",
+    "cors": "^2.8.5",
+    "dotenv": "^16.4.5",
+    "express": "^4.21.0"
+  },
+  "devDependencies": {
+    "nodemon": "^3.1.7"
+  }
+}
